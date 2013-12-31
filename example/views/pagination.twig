@@ -1,0 +1,11 @@
+<h4>Twig</h4>
+{% for page in pages %}
+    {% if page is same as(false) %}
+        <span>{{ current }}</span>
+    {% elseif page starts with '...' %}
+        <span>...</span>
+    {% else %}
+        <a href="#{{ page }}">{{ page }}</a>
+    {% endif %}
+{% endfor %}
+<hr />
