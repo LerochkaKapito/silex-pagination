@@ -1,8 +1,9 @@
 {
     "name": "kilte/silex-pagination",
     "type": "library",
+    "license": "MIT",
     "description": "Simple PaginationServiceProvider for Silex",
-    "tags": ["silex", "pagination", "PaginationServiceProvider"],
+    "keywords": ["silex", "pagination", "PaginationServiceProvider"],
     "authors": [
         {
             "name": "Kilte",
