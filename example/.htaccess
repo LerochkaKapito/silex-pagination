@@ -1,0 +1,10 @@
+Options -Indexes
+DirectoryIndex index.php
+AddDefaultCharset UTF-8
+<IfModule mod_rewrite.c>
+    Options -MultiViews
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [QSA,L]
+</IfModule>
