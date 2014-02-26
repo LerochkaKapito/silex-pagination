@@ -6,25 +6,21 @@
     "keywords": ["silex", "pagination", "PaginationServiceProvider"],
     "authors": [
         {
-            "name": "Kilte",
+            "name": "Kilte Leichnam",
             "email": "nwotnbm@gmail.com"
         }
     ],
     "require": {
-        "php": ">=5.3.3"
+        "php": ">=5.3.3",
+        "kilte/pagination": "~1.0"
     },
     "require-dev": {
         "silex/silex": "*",
-        "kilte/silex-view": "~1.0",
         "twig/twig": ">=1.8,<2.0-dev"
     },
     "autoload": {
         "psr-0": {
             "Kilte\\Silex\\Pagination\\": "src"
         }
-    },
-    "suggest": {
-        "twig/twig": "",
-        "kilte/silex-view": ""
     }
 }
