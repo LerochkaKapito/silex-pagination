@@ -3,7 +3,7 @@
 /**
  * Part of the SilexPagination
  *
- * @author  Kilte <nwotnbm@gmail.com>
+ * @author  Kilte Leichnam <nwotnbm@gmail.com>
  * @package SilexPagination
  */
 
@@ -25,7 +25,7 @@ trait PaginationTrait
      * @param int $perPage    Items per page
      * @param int $neighbours Number of the neighboring pages at the left and the right sides
      *
-     * @return PaginationService
+     * @return \Kilte\Pagination\Pagination
      */
     public function pagination($total, $current, $perPage = null, $neighbours = null)
     {
