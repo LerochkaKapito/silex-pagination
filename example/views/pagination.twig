@@ -1,11 +1,25 @@
 <h4>Pagination Example</h4>
-{% for page in pages %}
-    {% if page is same as(false) %}
-        <span>{{ current }}</span>
-    {% elseif page starts with '...' %}
-        <span>...</span>
-    {% else %}
-        <a href="/{{ page }}">{{ page }}</a>
+<style>
+  ul {
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+</style>
+<ul>
+  {% for number, position in pages %}
+    {% if position == 'first' %}
+      <li><a href="/{{ number }}">&laquo;</a></li>
+    {% elseif position == 'less' or position == 'more' %}
+      <li>...</li>
+    {% elseif position == 'previous' or position == 'next' %}
+      <li><a href="/{{ number }}">{{ number }}</a></li>
+    {% elseif position == 'current' %}
+      <li>{{ number }}</li>
+    {% elseif position == 'last' %}
+      <li><a href="/{{ number }}">&raquo;</a></li>
     {% endif %}
-{% endfor %}
+  {% endfor %}
+</ul>
 <hr />
