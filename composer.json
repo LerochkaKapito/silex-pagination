@@ -2,7 +2,7 @@
     "name": "kilte/silex-pagination",
     "type": "library",
     "license": "MIT",
-    "description": "Simple PaginationServiceProvider for Silex",
+    "description": "PaginationServiceProvider for Silex micro framework",
     "keywords": ["silex", "pagination", "PaginationServiceProvider"],
     "authors": [
         {
@@ -16,11 +16,12 @@
     },
     "require-dev": {
         "silex/silex": "*",
-        "twig/twig": ">=1.8,<2.0-dev"
+        "twig/twig": ">=1.8,<2.0-dev",
+        "phpunit/phpunit": "~4.1"
     },
     "autoload": {
-        "psr-0": {
-            "Kilte\\Silex\\Pagination\\": "src"
+        "psr-4": {
+            "Kilte\\Silex\\Pagination\\": "src/Kilte/Silex/Pagination"
         }
     }
 }
