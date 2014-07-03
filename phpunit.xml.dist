@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit
+        colors="true"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        >
+    <testsuites>
+        <testsuite name="Silex Pagination Test Suite">
+            <directory>./src/Kilte/Silex/Pagination/Tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
