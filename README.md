@@ -2,6 +2,8 @@
 
 A simple [pagination](https://github.com/Kilte/pagination) provider for [Silex](http://silex.sensiolabs.org)
 
+[![Build Status](https://travis-ci.org/Kilte/silex-pagination.svg?branch=master)](https://travis-ci.org/Kilte/silex-pagination)
+
 ## Requirements
 
 - PHP >= 5.3.3
