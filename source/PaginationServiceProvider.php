@@ -44,6 +44,7 @@ class PaginationServiceProvider implements ServiceProviderInterface
 
     /**
      * {@inheritdoc}
+     * @codeCoverageIgnore
      */
     public function boot(Application $app)
     {

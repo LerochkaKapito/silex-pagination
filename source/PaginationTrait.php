@@ -26,6 +26,7 @@ trait PaginationTrait
      * @param int $neighbours Number of the neighboring pages at the left and the right sides
      *
      * @return \Kilte\Pagination\Pagination
+     * @codeCoverageIgnore
      */
     public function pagination($total, $current, $perPage = null, $neighbours = null)
     {

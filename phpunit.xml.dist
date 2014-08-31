@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <phpunit
         colors="true"
         convertErrorsToExceptions="true"
@@ -8,7 +7,15 @@
         >
     <testsuites>
         <testsuite name="Silex Pagination Test Suite">
-            <directory>./src/Kilte/Silex/Pagination/Tests</directory>
+            <directory>./source/Tests/</directory>
         </testsuite>
     </testsuites>
+    <filter>
+        <whitelist>
+            <directory>./source/</directory>
+            <exclude>
+                <directory>./source/Tests/</directory>
+            </exclude>
+        </whitelist>
+    </filter>
 </phpunit>
