@@ -4,9 +4,11 @@ A simple [pagination](https://github.com/Kilte/pagination) provider for [Silex](
 
 [![Build Status](https://travis-ci.org/Kilte/silex-pagination.svg?branch=master)](https://travis-ci.org/Kilte/silex-pagination)
 
+
 ## Requirements
 
 - PHP >= 5.3.3
+
 
 ## Usage
 
@@ -17,21 +19,75 @@ $pages = $app['pagination'](100, 500);
 
 More information available [here](https://github.com/Kilte/pagination)
 
-## Options
+### Options
 
 - `'pagination.per_page'` - Items per page (20 by default)
 - `'pagination.neighbours'` - Number of neighboring pages at the left and the right sides (4 by default)
 
-## How to use it in the my "views"?
+### How to use it in the my "views"?
 
 See example for more information.
 
-## Traits
+### Traits
 
 `\Kilte\Silex\Pagination\PaginationTrait` adds the following shortcut:
 
 `object pagination(int $total[, int $current[, int $perPage[, int $neighbours = 4]]])` - is alias for `$app['pagination']()`
 
-## LICENSE
+
+## Tests
+
+```
+$ composer install
+$ vendor/bin/phpunit
+```
+
+
+## Changelog
+
+### 1.1.1 \[31.08.14\]
+
+- Added unit tests
+- Other small improvements
+
+### 1.1.0 \[29.06.2014\]
+
+- Updated pagination to 1.1.0
+
+### 1.0.1 \[26.02.2014\]
+
+- Moved pagination service to another library
+
+### 1.0.0 \[31.12.2013\]
+
+- First release
+
+
+## Contributing
+
+- Fork it
+- Create your feature branch (git checkout -b awesome-feature)
+- Make your changes
+- Write/update tests, if necessary
+- Update README.md, if necessary
+- Push your branch to origin (git push origin awesome-feature)
+- Send pull request
+- ???
+- PROFIT!!!
+
+Do not forget merge upstream changes:
+
+    git remote add upstream https://github.com/Kilte/silex-pagination
+    git checkout master
+    git pull upstream
+    git push origin master
+
+Now you can to remove your branch:
+
+    git branch -d awesome-feature
+    git push origin :awesome-feature
+
+
+# LICENSE
 
 The MIT License (MIT)
