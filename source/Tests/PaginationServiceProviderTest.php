@@ -1,25 +1,20 @@
 <?php
 
 /**
- * Part of the SilexPagination
+ * Part of the SilexPagination.
  *
  * @author  Kilte Leichnam <nwotnbm@gmail.com>
- * @package SilexPagination
  */
-
 namespace Kilte\Silex\Pagination\Tests;
 
 use Kilte\Silex\Pagination\PaginationServiceProvider;
 use Silex\Application;
 
 /**
- * Class PaginationServiceProviderTest
- *
- * @package Kilte\Silex\Pagination\Tests
+ * Class PaginationServiceProviderTest.
  */
 class PaginationServiceProviderTest extends \PHPUnit_Framework_TestCase
 {
-
     public function testRegisterDefaultValues()
     {
         $app = new Application();
@@ -44,5 +39,4 @@ class PaginationServiceProviderTest extends \PHPUnit_Framework_TestCase
         $pagination = $app['pagination'](100, 5);
         $this->assertInstanceOf('\\Kilte\\Pagination\\Pagination', $pagination);
     }
-
 }

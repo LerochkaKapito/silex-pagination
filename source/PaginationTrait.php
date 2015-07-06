@@ -1,24 +1,19 @@
 <?php
 
 /**
- * Part of the SilexPagination
+ * Part of the SilexPagination.
  *
  * @author  Kilte Leichnam <nwotnbm@gmail.com>
- * @package SilexPagination
  */
-
 namespace Kilte\Silex\Pagination;
 
 /**
- * PaginationTrait Trait
- *
- * @package Kilte\Silex\Pagination
+ * PaginationTrait Trait.
  */
 trait PaginationTrait
 {
-
     /**
-     * Returns pagination service instance
+     * Returns pagination service instance.
      *
      * @param int $total      Total items
      * @param int $current    Current page
@@ -32,5 +27,4 @@ trait PaginationTrait
     {
         return $this['pagination']($total, $current, $perPage, $neighbours);
     }
-
 }
