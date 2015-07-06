@@ -12,8 +12,6 @@ use Silex\Application;
 use Silex\Provider\TwigServiceProvider;
 
 require __DIR__ . '/../vendor/autoload.php';
-error_reporting(-1);
-ini_set('display_errors', 1);
 $app = new Application(array('debug' => true));
 
 $app->register(new PaginationServiceProvider, array('pagination.per_page' => 5))
