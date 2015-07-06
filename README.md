@@ -2,13 +2,14 @@
 
 A simple [pagination](https://github.com/Kilte/pagination) provider for [Silex](http://silex.sensiolabs.org)
 
-[![Build Status](https://travis-ci.org/Kilte/silex-pagination.svg?branch=master)](https://travis-ci.org/Kilte/silex-pagination)
-
+[![Build Status](https://img.shields.io/travis/Kilte/silex-pagination.svg?style=flat-square)](https://travis-ci.org/Kilte/silex-pagination)
+[![Downloads](https://img.shields.io/packagist/dt/kilte/silex-pagination.svg?style=flat-square)](https://packagist.org/packages/kilte/silex-pagination)
+[![License](https://img.shields.io/packagist/l/kilte/silex-pagination.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+[![SensioLabs Insight](https://img.shields.io/sensiolabs/i/7b926516-ab4d-446c-970c-7aa74817e7d2.svg?style=flat-square)](https://insight.sensiolabs.com/projects/7b926516-ab4d-446c-970c-7aa74817e7d2)
 
 ## Requirements
 
 - PHP >= 5.3.3
-
 
 ## Usage
 
@@ -34,14 +35,12 @@ See example for more information.
 
 `object pagination(int $total[, int $current[, int $perPage[, int $neighbours = 4]]])` - is alias for `$app['pagination']()`
 
-
 ## Tests
 
 ```
 $ composer install
 $ vendor/bin/phpunit
 ```
-
 
 ## Changelog
 
@@ -61,7 +60,6 @@ $ vendor/bin/phpunit
 ### 1.0.0 \[31.12.2013\]
 
 - First release
-
 
 ## Contributing
 
@@ -86,7 +84,6 @@ Now you can to remove your branch:
 
     git branch -d awesome-feature
     git push origin :awesome-feature
-
 
 # LICENSE
 
