@@ -1,5 +1,7 @@
 # SilexPagination
 
+**This project is looking for a maintainer. Please get in touch with [nwotnbm at gmail].**
+
 A simple [pagination](https://github.com/Kilte/pagination) provider for [Silex](http://silex.sensiolabs.org)
 
 [![Build Status](https://img.shields.io/travis/Kilte/silex-pagination.svg?style=flat-square)](https://travis-ci.org/Kilte/silex-pagination)
