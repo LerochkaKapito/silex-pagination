@@ -4,10 +4,8 @@
 
 A simple [pagination](https://github.com/Kilte/pagination) provider for [Silex](http://silex.sensiolabs.org)
 
-[![Build Status](https://img.shields.io/travis/Kilte/silex-pagination.svg?style=flat-square)](https://travis-ci.org/Kilte/silex-pagination)
 [![Downloads](https://img.shields.io/packagist/dt/kilte/silex-pagination.svg?style=flat-square)](https://packagist.org/packages/kilte/silex-pagination)
 [![License](https://img.shields.io/packagist/l/kilte/silex-pagination.svg?style=flat-square)](http://opensource.org/licenses/MIT)
-[![SensioLabs Insight](https://img.shields.io/sensiolabs/i/7b926516-ab4d-446c-970c-7aa74817e7d2.svg?style=flat-square)](https://insight.sensiolabs.com/projects/7b926516-ab4d-446c-970c-7aa74817e7d2)
 
 ## Requirements
 
