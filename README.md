@@ -1,11 +1,9 @@
 # SilexPagination
 
-**This project is looking for a maintainer. Please get in touch with [nwotnbm at gmail].**
+A simple [pagination](https://github.com/AmsTaFFix/pagination) provider for [Silex](http://silex.sensiolabs.org)
 
-A simple [pagination](https://github.com/Kilte/pagination) provider for [Silex](http://silex.sensiolabs.org)
-
-[![Downloads](https://img.shields.io/packagist/dt/kilte/silex-pagination.svg?style=flat-square)](https://packagist.org/packages/kilte/silex-pagination)
-[![License](https://img.shields.io/packagist/l/kilte/silex-pagination.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+[![Downloads](https://img.shields.io/packagist/dt/amstaffix/silex-pagination.svg?style=flat-square)](https://packagist.org/packages/amstaffix/silex-pagination)
+[![License](https://img.shields.io/packagist/l/amstaffix/silex-pagination.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
 ## Requirements
 
@@ -18,7 +16,7 @@ $app->register(new \Kilte\Silex\Pagination\PaginationServiceProvider);
 $pages = $app['pagination'](100, 500);
 ```
 
-More information available [here](https://github.com/Kilte/pagination)
+More information available [here](https://github.com/AmsTaFFix/pagination)
 
 ### Options
 
@@ -75,7 +73,7 @@ $ vendor/bin/phpunit
 
 Do not forget merge upstream changes:
 
-    git remote add upstream https://github.com/Kilte/silex-pagination
+    git remote add upstream https://github.com/AmsTaFFix/silex-pagination
     git checkout master
     git pull upstream
     git push origin master

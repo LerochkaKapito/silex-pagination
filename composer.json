@@ -1,18 +1,26 @@
 {
-    "name": "kilte/silex-pagination",
+    "name": "amstaffix/silex-pagination",
     "type": "library",
     "license": "MIT",
     "description": "PaginationServiceProvider for Silex micro framework",
-    "keywords": ["silex", "pagination", "PaginationServiceProvider"],
+    "keywords": [
+        "silex",
+        "pagination",
+        "PaginationServiceProvider"
+    ],
     "authors": [
         {
             "name": "Kilte Leichnam",
             "email": "nwotnbm@gmail.com"
+        },
+        {
+            "name": "Nikita Sapogov",
+            "email": "amstaffix@gmail.com"
         }
     ],
     "require": {
         "php": ">=5.3.3",
-        "kilte/pagination": "~1.1"
+        "amstaffix/pagination": "~1.1"
     },
     "require-dev": {
         "silex/silex": "*",
