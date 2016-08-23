@@ -20,7 +20,8 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "amstaffix/pagination": "~1.1"
+        "amstaffix/pagination": "~1.1",
+        "pimple/pimple": "^3.0"
     },
     "require-dev": {
         "silex/silex": "*",
