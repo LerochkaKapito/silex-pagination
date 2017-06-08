@@ -8,7 +8,7 @@
 namespace Kilte\Silex\Pagination\Tests;
 
 use Kilte\Silex\Pagination\PaginationServiceProvider;
-use Silex\Application;
+use Pimple\Container;
 
 /**
  * Class PaginationServiceProviderTest.
@@ -17,7 +17,7 @@ class PaginationServiceProviderTest extends \PHPUnit_Framework_TestCase
 {
     public function testRegisterDefaultValues()
     {
-        $app = new Application();
+        $app = new Container();
         $app->register(new PaginationServiceProvider());
         $this->assertEquals(20, $app['pagination.per_page']);
         $this->assertEquals(4, $app['pagination.neighbours']);
@@ -28,7 +28,7 @@ class PaginationServiceProviderTest extends \PHPUnit_Framework_TestCase
 
     public function testRegisterCustomValues()
     {
-        $app = new Application();
+        $app = new Container();
         $app->register(
             new PaginationServiceProvider(),
             array('pagination.per_page' => 2, 'pagination.neighbours' => 2)

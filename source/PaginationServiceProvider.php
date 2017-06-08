@@ -8,8 +8,8 @@
 namespace Kilte\Silex\Pagination;
 
 use Kilte\Pagination\Pagination;
-use Silex\Application;
-use Silex\ServiceProviderInterface;
+use Pimple\Container;
+use Pimple\ServiceProviderInterface;
 
 /**
  * PaginationServiceProvider Class.
@@ -19,7 +19,7 @@ class PaginationServiceProvider implements ServiceProviderInterface
     /**
      * {@inheritdoc}
      */
-    public function register(Application $app)
+    public function register(Container $app)
     {
         $app['pagination.per_page'] = isset($app['pagination.per_page']) ? (int) $app['pagination.per_page'] : 20;
         $app['pagination.neighbours'] = isset($app['pagination.neighbours']) ? (int) $app['pagination.neighbours'] : 4;
